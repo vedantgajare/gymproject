@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**navbar**/
+body {
+    font-family: 'Patua One', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aqua;
+}
+
+.nav-links a {
+    color: blue;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: gray;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 15px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.navbar_icon {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+@media(max-width:768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: yellow;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: orange;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .navbar_icon {
+        display: block;
+    }
+}
+
+/** main img**/
+.img-fluid {
+    width: 100%;
+    background-position: center;
+}
+
+/** about section**/
+.abouthead {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.underline {
+    height: 5px;
+    width: 150px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.aboutinfo {
+    text-align: justify;
+    padding: 50px 50px;
+    font-size: 18px;
+
+}
+
+.btn {
+    background-color: brown;
+    border: none;
+    color: azure;
+    padding: 15px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border-radius: 600px;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+/**services section**/
+.row{
+    --auto-grid-min-size:16rem;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(var( --auto-grid-min-size),1fr));
+grid-gap :1rem;
+margin-top :50px;
+}
+.container{
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.col{
+    font-size: 1.2rem;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: bisque;
+    text-align: center;
+    align-items: center;
+}
+/** gym section**/
+ .gymhed{
+     text-decoration: center;
+     margin-top: 50px;
+}
+.gym-container{
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    }
+    .gym_row{
+        --auto-grid-min-size:16rem;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(var( --auto-grid-min-size),1fr));
+grid-gap :1rem;
+margin-top :50px;
+
+  }
+  .gym_col{
+    font-size: 1.23rem;
+    padding: 20px;
+    border: 1px solid tomato; 
+    cursor: pointer;
+
+  }
+  /**location**/
+  .location{
+     text-align: center;
+margin-top: 500px;
+
+  }
+  .map{
+    margin-top: 50px;
+  }
+/** footer**/
+footer{
+    background-color:black;
+}
+.footertext{
+    color:white;
+    text-align: center;
+     padding: 20px;
+}
